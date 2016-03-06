@@ -25,3 +25,23 @@ insert product values(1,'阿莫西林',null,null,1,1000,1,10,null);
 
 insert product values(2,'后悔药',null,null,1,1000,1,10000,null);
 
+
+insert client_address values(1,2,52,500,'六环');
+insert client values(1,'上海棒棒药店',null,null,'私人','小李','+8618812346780',1);
+
+insert `order` (client_id,order_status) values(1,0);
+
+insert order_detail values(1,1,1,10,100);
+insert order_detail values(2,1,2,10,100);
+
+select * from order_detail;
+
+select order_id,sum(product_num) as total from order_detail group by order_id;
+
+insert `order` (client_id,order_status) values(1,0);
+
+insert order_detail values(5,2,8,10,100);
+insert order_detail values(6,2,6,10,100);
+
+select * from `order`;
+
