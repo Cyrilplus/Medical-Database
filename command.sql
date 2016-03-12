@@ -40,8 +40,11 @@ select order_id,sum(product_num) as total from order_detail group by order_id;
 
 insert `order` (client_id,order_status) values(1,0);
 
-insert order_detail values(5,2,8,10,100);
-insert order_detail values(6,2,6,10,100);
+insert order_detail values(7,2,8,10,100);
+insert order_detail values(8,2,1,10,100);
 
 select * from `order`;
+
+select * from order_detail;
+
 
