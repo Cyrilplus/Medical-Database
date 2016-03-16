@@ -46,5 +46,17 @@ insert order_detail values(8,2,1,10,100);
 select * from `order`;
 
 select * from order_detail;
+select * from product;
+
+select * from order_detail;
+
+insert order_detail(order_id,product_id,product_num,order_detail_total_money) values(4,3,1,9999);
+
+select * from purchase;
+
+insert dispatch(repository_from_id,repository_to_id) values(1,2);
+select * from dispatch;
+
+delete from dispatch where dispatch_id = 1;
 
 

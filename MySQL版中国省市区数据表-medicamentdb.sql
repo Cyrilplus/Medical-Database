@@ -1,6 +1,3 @@
-﻿
-
-/*国家/省/市 数据信息*/
 INSERT INTO `region` VALUES (1,0,'中国',0);
 INSERT INTO `region` VALUES (2,1,'北京',1);
 INSERT INTO `region` VALUES (3,1,'安徽',1);
